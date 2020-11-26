@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+/* line 5, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../sass/themes/_flex.scss */
+.flex-column {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 6, ../../sass/themes/_flex.scss */
+.flex-row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 11, ../../sass/themes/_flex.scss */
+.flex-center {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* line 16, ../../sass/themes/_flex.scss */
+.flex-space-between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/* line 20, ../../sass/themes/_flex.scss */
+.grow {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+/* line 3, ../../sass/layout/_HeaderComponent.scss */
+.header-component {
+  height: 100vh;
+  background-image: url("../../src/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 3, ../../sass/layout/_SidebarComponent.scss */
+.sidebar-component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #434242;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 14, ../../sass/layout/_SidebarComponent.scss */
+.logo-navbar {
+  color: #ECF0F1;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+}
+
+/* line 23, ../../sass/layout/_SidebarComponent.scss */
+.sidebar-component nav {
+  float: right;
+}
+
+/* line 27, ../../sass/layout/_SidebarComponent.scss */
+.sidebar-component nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* line 33, ../../sass/layout/_SidebarComponent.scss */
+.sidebar-component nav ul li {
+  list-style-type: none;
+}
+
+/* line 37, ../../sass/layout/_SidebarComponent.scss */
+.sidebar-component nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #ECF0F1;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 46, ../../sass/layout/_SidebarComponent.scss */
+.sidebar-component nav ul li a:hover,
+.sidebar-component nav ul li a.active {
+  color: #ECF0F1;
+  background: #2091DC;
+}
+
+/* line 52, ../../sass/layout/_SidebarComponent.scss */
+.menu-toggle {
+  color: #ECF0F1;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  /* line 62, ../../sass/layout/_SidebarComponent.scss */
+  .sidebar-component {
+    padding: 0 20px;
+  }
+
+  /* line 65, ../../sass/layout/_SidebarComponent.scss */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* line 68, ../../sass/layout/_SidebarComponent.scss */
+  .sidebar-component nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #434242;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  /* line 77, ../../sass/layout/_SidebarComponent.scss */
+  .sidebar-component nav.active {
+    left: 0;
+  }
+
+  /* line 80, ../../sass/layout/_SidebarComponent.scss */
+  .sidebar-component nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  /* line 84, ../../sass/layout/_SidebarComponent.scss */
+  .sidebar-component nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+/* line 22, ../../sass/main.scss */
+.app {
+  position: relative;
+}
