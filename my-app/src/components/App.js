@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import '../App.css';
 import '../css/main.css';
-import SidebarComponent from "./layout/SidebarComponent";
-import HeaderComponent from "./layout/HeaderComponent";
+import Row from './modules/Row';
+import requests from '../js/requests';
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <SidebarComponent />
-        <HeaderComponent />
+        {/* Nav */}
+        {/* Banner */}
+
+        <Row
+          title="NETFLIX ORIGINALS"
+          fetchUrl={requests.fetchNetflixOriginals}
+          isLargeRow={true}
+        />
+        <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+
+        <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+        <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+        <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
+        <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+        <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
+        <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
       </div>
     );
   }
