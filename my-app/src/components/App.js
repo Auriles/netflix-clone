@@ -2,14 +2,17 @@ import React, { Component } from 'react';
 import '../App.css';
 import '../css/main.css';
 import Row from './modules/Row';
+import Banner from './modules/Banner';
 import requests from '../js/requests';
 
 class App extends Component {
   render() {
     return (
       <div className="app">
+
         {/* Nav */}
         {/* Banner */}
+        <Banner />
 
         <Row
           title="NETFLIX ORIGINALS"

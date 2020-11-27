@@ -1,9 +1,10 @@
 /* line 1, ../../../sass/modules/Row.scss */
 .row {
+  color: white;
   margin-left: 20px;
 }
 
-/* line 5, ../../../sass/modules/Row.scss */
+/* line 6, ../../../sass/modules/Row.scss */
 .row_posters {
   display: flex;
   overflow-y: hidden;
@@ -11,12 +12,12 @@
   padding: 20px;
 }
 
-/* line 12, ../../../sass/modules/Row.scss */
+/* line 13, ../../../sass/modules/Row.scss */
 .row_posters::-webkit-scrollbar {
   display: none;
 }
 
-/* line 16, ../../../sass/modules/Row.scss */
+/* line 17, ../../../sass/modules/Row.scss */
 .row_poster {
   object-fit: contain;
   width: 100%;
@@ -25,18 +26,18 @@
   transition: transform 450ms;
 }
 
-/* line 24, ../../../sass/modules/Row.scss */
+/* line 25, ../../../sass/modules/Row.scss */
 .row_poster:hover {
   transform: scale(1.08);
   opacity: 1;
 }
 
-/* line 29, ../../../sass/modules/Row.scss */
+/* line 30, ../../../sass/modules/Row.scss */
 .row_posterLarge {
   max-height: 250px;
 }
 
-/* line 33, ../../../sass/modules/Row.scss */
+/* line 34, ../../../sass/modules/Row.scss */
 .row_posterLarge:hover {
   transform: scale(1.09);
   opacity: 1;
