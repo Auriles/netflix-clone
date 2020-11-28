@@ -3,6 +3,7 @@ import '../App.css';
 import '../css/main.css';
 import Row from './modules/Row';
 import Banner from './modules/Banner';
+import Nav from './modules/Nav';
 import requests from '../js/requests';
 
 class App extends Component {
@@ -10,8 +11,8 @@ class App extends Component {
     return (
       <div className="app">
 
-        {/* Nav */}
-        {/* Banner */}
+        <Nav />
+
         <Banner />
 
         <Row
